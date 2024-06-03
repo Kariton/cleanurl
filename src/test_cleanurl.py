@@ -95,6 +95,12 @@ class Clean(unittest.TestCase):
             "groups.google.com/g/golang-nuts",
             "https://www.typescriptlang.org/play#code/JYOwLgpgTgZghgYwgAjMg3gWAFDL8uAIwQC4MBzMgZzClHIF8BuHfZAEwhjPXbJACuAW0LRmOBjhwIA9iBrJuyAApwoYYHAA2AHjAA+ZAF4MrfEVIUyAcgAW1hgBozeTkt5kA7JOzjs0uQU4Y2RrC2sCKmQAawgATxkYVBZ-bFl5NCgQmABtOABdFNyCkKgmIA",
             "www.typescriptlang.org/play?code=JYOwLgpgTgZghgYwgAjMg3gWAFDL8uAIwQC4MBzMgZzClHIF8BuHfZAEwhjPXbJACuAW0LRmOBjhwIA9iBrJuyAApwoYYHAA2AHjAA%2BZAF4MrfEVIUyAcgAW1hgBozeTkt5kA7JOzjs0uQU4Y2RrC2sCKmQAawgATxkYVBZ-bFl5NCgQmABtOABdFNyCkKgmIA",
+            "https://www.youtube.com/watch?v=71SsVUmT1ys&ignore=query",
+            "youtu.be/71SsVUmT1ys",
+            "https://dev.tube/video/EZ05e7EMOLM",
+            "youtu.be/EZ05e7EMOLM",
+            "https://www.youtube.com/embed/71SsVUmT1ys?ignore=query",
+            "youtu.be/71SsVUmT1ys",
         ]
 
         for u, r in zip(urls[0::2], urls[1::2]):
@@ -145,7 +151,7 @@ class Clean(unittest.TestCase):
             "http://www.path-normalization.com/a///index.html////",
             "path-normalization.com/a",
             "https://www.youtube.com/watch?v=71SsVUmT1ys&ignore=query",
-            "youtu.be/71SsVUmT1ys",
+            "youtu.be/71ssvumt1ys",
             "https://www.xojoc.pw/blog/////focus.html",
             "xojoc.pw/blog/focus",
             "https://web.archive.org/web/20200103092739/https://www.xojoc.pw/blog/focus.html",
@@ -169,9 +175,9 @@ class Clean(unittest.TestCase):
             "https://www.techcrunch.com/2009/05/30/vidoop-is-dead-employees-getting-computers-in-lieu-of-wages/?awesm=tcrn.ch_2t3&utm_campaign=techcrunch&utm_content=techcrunch-autopost&utm_medium=tcrn.ch-twitter&utm_source=direct-tcrn.ch",
             "techcrunch.com/2009/05/30/vidoop-is-dead-employees-getting-computers-in-lieu-of-wages",
             "https://dev.tube/video/EZ05e7EMOLM",
-            "youtu.be/EZ05e7EMOLM",
+            "youtu.be/ez05e7emolm",
             "https://www.youtube.com/embed/71SsVUmT1ys?ignore=query",
-            "youtu.be/71SsVUmT1ys",
+            "youtu.be/71ssvumt1ys",
             "https://edition.cnn.com/2021/09/29/business/supply-chain-workers/index.html",
             "cnn.com/2021/09/29/business/supply-chain-workers",
             "https://www.google.com/amp/s/www.cnbc.com/amp/2021/04/27/archegos-hit-to-ubs-stuns-investors-as-shares-slide.html",
