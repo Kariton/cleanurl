@@ -332,13 +332,13 @@ def __canonical_youtube(
         if path.startswith("/embed/"):
             path_parts = path.split("/")
             if len(path_parts) >= 3 and path_parts[-1] != "":
-                video_id  = path_parts[-1]
+                video_id = path_parts[-1]
 
-            if not respect_semantics:
-                video_id = video_id.lower()
+        if video_id and not respect_semantics:
+            video_id = video_id.lower()
 
-            if video_id:
-                return "youtu.be", "/" + video_id, [], None
+        if video_id:
+            return "youtu.be", "/" + video_id, [], None
 
         if host_remap and host == "dev.tube" and path.startswith("/video/"):
             return "youtu.be", path[len("/video") :], [], None
